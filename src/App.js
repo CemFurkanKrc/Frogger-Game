@@ -89,9 +89,9 @@ const Game = () => {
     // Engellerin hızını arttıran useEffect
     const intervalDurationDecrease = setInterval(() => {
       if (gameStarted) {
-        setIntervalDuration((prevInterval) => Math.max(0.1, prevInterval - 0.1));
+        setIntervalDuration((prevInterval) => Math.max(1, prevInterval - 1));
       }
-    }, 1000);
+    }, 10000);
 
     // Temizleme işlemleri
     return () => {
